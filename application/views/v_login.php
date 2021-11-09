@@ -4,19 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/bootstrap-4.6.1/dist/css/bootstrap.min.css'); ?>">
-
 <!-- Login CSS -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/login.css'); ?>">
-
 <!-- Jquery -->
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery-3.6.0.min.js'); ?>"></script>
-
 <!-- Bootstrap JS -->
 <script type="text/javascript" src="<?php echo base_url('assets/bootstrap-4.6.1/dist/js/bootstrap.bundle.min.js'); ?>"></script>
-
 <!-- Font Awesome -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css'); ?>">
-
 <!-- Icon -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/iconic/css/material-design-iconic-font.min.css'); ?>">
 
