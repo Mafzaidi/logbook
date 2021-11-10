@@ -76,12 +76,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	window.addEventListener('load', function() {
 		// Fetch all the forms we want to apply custom Bootstrap validation styles to
 		var forms = document.getElementsByClassName('needs-validation');
+		var email = document.getElementById('email');
 		// Loop over them and prevent submission
 		var validation = Array.prototype.filter.call(forms, function(form) {
 		form.addEventListener('submit', function(event) {
 			if (form.checkValidity() === false) {
 			event.preventDefault();
 			event.stopPropagation();
+			if (email.val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+				console.log('err');
 			}
 			form.classList.add('was-validated');
 		}, false);
