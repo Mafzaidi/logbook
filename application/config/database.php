@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
+defined('BASEPATH') or exit('No direct script access allowed');
+=======
 defined('BASEPATH') OR exit('No direct script access allowed');
+>>>>>>> 3065f0a82bf8e297f57cc0558900ae9e845fc80c
 
 /*
 | -------------------------------------------------------------------
