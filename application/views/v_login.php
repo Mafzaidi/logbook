@@ -28,7 +28,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<div class="container-fluid">
 		<div class="row justify-content-center align-items-center vh-100">
 			<div class="col-12 col-sm-6 col-md-5">
-				<form class="form-container needs-validation" novalidate>
+				<form class="form-container needs-validation" action="<?php echo base_url('login/user_login'); ?>" method="post" novalidate>
 					<h2 class="text-center">LOGIN</h2>
 
 					<div class="form-group">
