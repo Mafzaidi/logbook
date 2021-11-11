@@ -8,15 +8,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <meta charset="utf-8">
     <title>Welcome to CodeIgniter</title>
     <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap-4.6.1/dist/css/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/home.css'); ?>">
 </head>
 
 <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a href="#" class="navbar-brand">Academind</a>
+        <a href="#" class="navbar-brand fa fa-l">ogbook</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Users</a>
@@ -27,6 +29,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </ul>
         </div>
     </nav>
+
+    <div class="container-fluid">
+
+    </div>
     <script src="<?php echo base_url('assets/js/jquery-3.6.0.min.js'); ?>"></script>
     <script src="<?php echo base_url('assets/js/popper.min.js'); ?>"></script>
     <script src="<?php echo base_url('assets/bootstrap-4.6.1/dist/js/bootstrap.bundle.min.js'); ?>"></script>
