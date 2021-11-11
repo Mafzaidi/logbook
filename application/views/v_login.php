@@ -37,7 +37,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="inputGroup-sizing-default" data-symbol="&#xf206;"></span>
 							</div>
-							<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Type your email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Type your email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
 							<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>  -->
 							<div class="invalid-feedback">
 								Your email is required
@@ -51,7 +51,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="inputGroup-sizing-default" data-symbol="&#xf190;"></span>
 							</div>
-							<input type="password" class="form-control" id="password" placeholder="Type your password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+							<input type="password" class="form-control" id="password" name="password" placeholder="Type your password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
 							<div class="invalid-feedback">
 								Your password is required
 							</div>
