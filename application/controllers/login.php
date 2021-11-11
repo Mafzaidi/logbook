@@ -37,7 +37,14 @@ class Login extends CI_Controller
 				);
 
 				$this->session->set_userdata($data_session);
+				redirect(base_url('home'));
+			} else {
+				echo "<script>alert('Mohon periksa User & Password Anda');javascript:history.back();</script>";
+				exit();
 			}
+		} else {
+			/*echo "<script>alert('User & Password Harus diisi '); javascript:history.back();</script>";
+			exit();*/
 		}
 	}
 }
