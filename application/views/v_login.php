@@ -28,7 +28,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<div class="container-fluid">
 		<div class="row justify-content-center align-items-center vh-100">
 			<div class="col-12 col-sm-6 col-md-5">
-				<form class="form-container needs-validation" novalidate>
+				<form class="form-container needs-validation" action="<?php echo base_url('login/user_login'); ?>" method="post" novalidate>
 					<h2 class="text-center">LOGIN</h2>
 
 					<div class="form-group">
@@ -37,7 +37,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="inputGroup-sizing-default" data-symbol="&#xf206;"></span>
 							</div>
-							<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Type your email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Type your email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
 							<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>  -->
 							<div class="invalid-feedback">
 								Your email is required
@@ -51,7 +51,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="inputGroup-sizing-default" data-symbol="&#xf190;"></span>
 							</div>
-							<input type="password" class="form-control" id="password" placeholder="Type your password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+							<input type="password" class="form-control" id="password" name="password" placeholder="Type your password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
 							<div class="invalid-feedback">
 								Your password is required
 							</div>
@@ -74,24 +74,24 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	</div>
 
 	<script>
-	// Example starter JavaScript for disabling form submissions if there are invalid fields
-	(function() {
-	'use strict';
-	window.addEventListener('load', function() {
-		// Fetch all the forms we want to apply custom Bootstrap validation styles to
-		var forms = document.getElementsByClassName('needs-validation');
-		// Loop over them and prevent submission
-		var validation = Array.prototype.filter.call(forms, function(form) {
-		form.addEventListener('submit', function(event) {
-			if (form.checkValidity() === false) {
-				event.preventDefault();
-				event.stopPropagation();
-			}
-			form.classList.add('was-validated');
-		}, false);
-		});
-	}, false);
-	})();
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+			'use strict';
+			window.addEventListener('load', function() {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function(form) {
+					form.addEventListener('submit', function(event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
 	</script>
 </body>
 
