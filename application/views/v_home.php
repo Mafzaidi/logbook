@@ -26,7 +26,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </li>
             </ul>
         </div>
-
     </nav>
     <script src="<?php echo base_url('assets/js/jquery-3.6.0.min.js'); ?>"></script>
     <script src="<?php echo base_url('assets/js/popper.min.js'); ?>"></script>
