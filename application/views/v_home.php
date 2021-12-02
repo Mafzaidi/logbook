@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Welcome to CodeIgniter</title>
     <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap-4.6.1/dist/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/home.css'); ?>">
@@ -21,10 +21,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Users</a>
+                    <a href="#" class="nav-link">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Products</a>
+                    <a href="#" class="nav-link">Users</a>
                 </li>
             </ul>
         </div>
